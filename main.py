@@ -88,12 +88,12 @@ if game == True:
 
 		
 		comp_choice = random.choice(options)
-		if choice == "R":
-			choice_name = 'Rock'
-		elif choice == "P":
-			choice_name = 'paper'
+		if comp_choice == "R":
+			comp_choice_name = 'Rock'
+		elif comp_choice == "P":
+			comp_choice_name = 'paper'
 		else:
-			choice_name = 'scissor'
+			comp_choice_name = 'scissor'
 	
 
 		
