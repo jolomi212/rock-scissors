@@ -2,8 +2,8 @@
 import random
 
 game  = ''
-# Print multiline instruction
-# performstring concatenation of string
+
+
 print("Winning Rules of the Rock paper scissor game as follows: \n"
 								+"Rock vs paper->paper wins \n"
 								+ "Rock vs scissor->Rock wins \n"
@@ -23,7 +23,7 @@ if game == True:
 	choice = (input("User turn: ")).upper()
 
 	
-	
+	#loop till valid input
 	while choice not in options:
 		print("Invalid input, pick again")
 		choice = (input("User turn: ")).upper()
@@ -42,13 +42,11 @@ if game == True:
 	print("user choice is: " + choice_name)
 	print("\nNow its computer turn.......")
 
-	# Computer chooses randomly any number
-	# among 1 , 2 and 3. Using randint method
-	# of random module
+	# Computer chooses randomly 
+	#  Using choice method of random module
 	comp_choice = random.choice(options)
 	
-	# looping until comp_choice value
-	# is equal to the choice value
+	
 	
 	if comp_choice == "R":
 		comp_choice_name = 'Rock'
@@ -58,7 +56,7 @@ if game == True:
 		comp_choice_name = 'Scissor'
 
 
-
+	#loop if it's a tie
 	while comp_choice == choice:
 		
 		print("It's a tie, choose again.")
@@ -88,15 +86,10 @@ if game == True:
 		print("user choice is: " + choice_name)
 		print("\nNow its computer turn.......")
 
-		# Computer chooses randomly any number
-		# among 1 , 2 and 3. Using randint method
-		# of random module
+		
 		comp_choice = random.choice(options)
 	
-	# 	comp_choice = random.randint(1, 3)
-
-	# initialize value of comp_choice_name
-	# variable corresponding to the choice value
+	
 
 		
 	print("Computer choice is: " + comp_choice_name)
